@@ -27,7 +27,7 @@ badges:
     image: "https://github.com/UGNS/build-harness/workflows/docker/badge.svg?branch=master"
     url: "https://github.com/UGNS/build-harness/actions?query=workflow%3Adocker"
   - name: "Latest Release"
-    image: "https://img.shields.io/github/release/cloudposse/build-harness.svg"
+    image: "https://img.shields.io/github/release/UGNS/build-harness.svg"
     url: "https://github.com/UGNS/build-harness/releases/latest"
 
 related:

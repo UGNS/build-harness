@@ -1,6 +1,6 @@
 
 <!-- markdownlint-disable -->
-# Build Harness [![Build Status](https://github.com/UGNS/build-harness/workflows/docker/badge.svg?branch=master)](https://github.com/UGNS/build-harness/actions?query=workflow%3Adocker) [![Latest Release](https://img.shields.io/github/release/cloudposse/build-harness.svg)](https://github.com/UGNS/build-harness/releases/latest)
+# Build Harness [![Build Status](https://github.com/UGNS/build-harness/workflows/docker/badge.svg?branch=master)](https://github.com/UGNS/build-harness/actions?query=workflow%3Adocker) [![Latest Release](https://img.shields.io/github/release/UGNS/build-harness.svg)](https://github.com/UGNS/build-harness/releases/latest)
 <!-- markdownlint-restore -->
 
 [![UnderGrid Network Services][logo]](https://undergrid.net)
