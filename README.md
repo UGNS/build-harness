@@ -1,11 +1,9 @@
 
 <!-- markdownlint-disable -->
-# Build Harness [![Build Status](https://github.com/cloudposse/build-harness/workflows/docker/badge.svg?branch=master)](https://github.com/cloudposse/build-harness/actions?query=workflow%3Adocker) [![Latest Release](https://img.shields.io/github/release/cloudposse/build-harness.svg)](https://github.com/cloudposse/build-harness/releases/latest) [![Slack Community](https://slack.cloudposse.com/badge.svg)](https://slack.cloudposse.com) [![Discourse Forum](https://img.shields.io/discourse/https/ask.sweetops.com/posts.svg)](https://ask.sweetops.com/)
+# Build Harness [![Build Status](https://github.com/UGNS/build-harness/workflows/docker/badge.svg?branch=master)](https://github.com/UGNS/build-harness/actions?query=workflow%3Adocker) [![Latest Release](https://img.shields.io/github/release/cloudposse/build-harness.svg)](https://github.com/UGNS/build-harness/releases/latest)
 <!-- markdownlint-restore -->
 
-[![README Header][readme_header_img]][readme_header_link]
-
-[![Cloud Posse][logo]](https://cpco.io/homepage)
+[![UnderGrid Network Services][logo]](https://undergrid.net)
 
 <!--
 
@@ -33,13 +31,15 @@ It's designed to work with CI/CD systems such as GitHub Actions, Codefresh, Trav
 
 ---
 
-This project is part of our comprehensive ["SweetOps"](https://cpco.io/sweetops) approach towards DevOps.
+This project is part of our comprehensive approach towards DevOps.
 [<img align="right" title="Share via Email" src="https://docs.cloudposse.com/images/ionicons/ios-email-outline-2.0.1-16x16-999999.svg"/>][share_email]
 [<img align="right" title="Share on Google+" src="https://docs.cloudposse.com/images/ionicons/social-googleplus-outline-2.0.1-16x16-999999.svg" />][share_googleplus]
 [<img align="right" title="Share on Facebook" src="https://docs.cloudposse.com/images/ionicons/social-facebook-outline-2.0.1-16x16-999999.svg" />][share_facebook]
 [<img align="right" title="Share on Reddit" src="https://docs.cloudposse.com/images/ionicons/social-reddit-outline-2.0.1-16x16-999999.svg" />][share_reddit]
 [<img align="right" title="Share on LinkedIn" src="https://docs.cloudposse.com/images/ionicons/social-linkedin-outline-2.0.1-16x16-999999.svg" />][share_linkedin]
 [<img align="right" title="Share on Twitter" src="https://docs.cloudposse.com/images/ionicons/social-twitter-outline-2.0.1-16x16-999999.svg" />][share_twitter]
+
+Designed following the [Cloud Posse, LLC][cloudposse] ["SweetOps"][sweetops] approach.
 
 
 
@@ -73,7 +73,7 @@ It's 100% Open Source and licensed under the [APACHE2](LICENSE).
 At the top of your `Makefile` add, the following...
 
 ```make
--include $(shell curl -sSL -o .build-harness "https://git.io/build-harness"; echo .build-harness)
+-include $(shell curl -sSL -o .build-harness "https://git.io/undergrid-build-harness"; echo .build-harness)
 ```
 
 This will download a `Makefile` called `.build-harness` and include it at run-time. We recommend adding the `.build-harness` file to your `.gitignore`.
@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: cloudposse/build-harness@master
+    - uses: UGNS/build-harness@master
       with:
         entrypoint: /usr/bin/make
         args: readme/lint
@@ -109,8 +109,8 @@ jobs:
 
 Here's how to get started...
 
-1. `git clone https://github.com/cloudposse/build-harness.git` to pull down the repository
-2. `make init` to initialize the [`build-harness`](https://github.com/cloudposse/build-harness/)
+1. `git clone https://github.com/UGNS/build-harness.git` to pull down the repository
+2. `make init` to initialize the [`build-harness`](https://github.com/UGNS/build-harness/)
 
 
 ## Examples
@@ -275,7 +275,7 @@ Alternatively, the "auto-init" feature can automatically run the `init` logic fo
 ```make
 BUILD_HARNESS_AUTO_INIT = true
 
--include $(shell curl -sSL -o .build-harness "https://git.io/build-harness"; echo .build-harness)
+-include $(shell curl -sSL -o .build-harness "https://git.io/undergrid-build-harness"; echo .build-harness)
 ```
 
 The "auto-init" feature will _also_ keep the install up-to-date. It will check the value of `BUILD_HARNESS_BRANCH`, get the commit ID, compare that to the current checkout, and update the clone if they differ. A useful side-effect is that it becomes easy to pin to versions of the `build-harness` from your own project, and let the `build-harness` update itself as you update the pin:
@@ -284,7 +284,7 @@ The "auto-init" feature will _also_ keep the install up-to-date. It will check t
 BUILD_HARNESS_AUTO_INIT = true
 BUILD_HARNESS_BRANCH = {TAG}
 
--include $(shell curl -sSL -o .build-harness "https://git.io/build-harness"; echo .build-harness)
+-include $(shell curl -sSL -o .build-harness "https://git.io/undergrid-build-harness"; echo .build-harness)
 ```
 
 Now when you run `make` the project will update itself to use the version specified by the `BUILD_HARNESS_BRANCH` value:
@@ -292,7 +292,7 @@ Now when you run `make` the project will update itself to use the version specif
 ```sh
 $ make help
 Removing existing build-harness
-Cloning https://github.com/cloudposse/build-harness.git#{TAG}...
+Cloning https://github.com/UGNS/build-harness.git#{TAG}...
 Cloning into 'build-harness'...
 remote: Enumerating objects: 143, done.
 remote: Counting objects: 100% (143/143), done.
@@ -310,9 +310,7 @@ Available targets:
 
 ## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub](https://github.com/cloudposse/build-harness)! (it helps us **a lot**)
-
-Are you using this project or any of our other projects? Consider [leaving a testimonial][testimonial]. =)
+Like this project? Please give it a ★ on [our GitHub](https://github.com/UGNS/build-harness)! (it helps us **a lot**)
 
 
 
@@ -320,8 +318,7 @@ Are you using this project or any of our other projects? Consider [leaving a tes
 
 Check out these related projects.
 
-- [Packages](https://github.com/cloudposse/packages) - Cloud Posse installer and distribution of native apps
-- [Dev Harness](https://github.com/cloudposse/dev) - Cloud Posse Local Development Harness
+- [Packages](https://github.com/UGNS/packages) - UnderGrid Network Services installer and distribution of native apps
 
 
 ## References
@@ -335,59 +332,17 @@ For additional context, refer to some of these links.
 
 **Got a question?** We got answers.
 
-File a GitHub [issue](https://github.com/cloudposse/build-harness/issues), send us an [email][email] or join our [Slack Community][slack].
-
-[![README Commercial Support][readme_commercial_support_img]][readme_commercial_support_link]
-
-## DevOps Accelerator for Startups
-
-
-We are a [**DevOps Accelerator**][commercial_support]. We'll help you build your cloud infrastructure from the ground up so you can own it. Then we'll show you how to operate it and stick around for as long as you need us.
-
-[![Learn More](https://img.shields.io/badge/learn%20more-success.svg?style=for-the-badge)][commercial_support]
-
-Work directly with our team of DevOps experts via email, slack, and video conferencing.
-
-We deliver 10x the value for a fraction of the cost of a full-time engineer. Our track record is not even funny. If you want things done right and you need it done FAST, then we're your best bet.
-
-- **Reference Architecture.** You'll get everything you need from the ground up built using 100% infrastructure as code.
-- **Release Engineering.** You'll have end-to-end CI/CD with unlimited staging environments.
-- **Site Reliability Engineering.** You'll have total visibility into your apps and microservices.
-- **Security Baseline.** You'll have built-in governance with accountability and audit logs for all changes.
-- **GitOps.** You'll be able to operate your infrastructure via Pull Requests.
-- **Training.** You'll receive hands-on training so your team can operate what we build.
-- **Questions.** You'll have a direct line of communication between our teams via a Shared Slack channel.
-- **Troubleshooting.** You'll get help to triage when things aren't working.
-- **Code Reviews.** You'll receive constructive feedback on Pull Requests.
-- **Bug Fixes.** We'll rapidly work with you to fix any bugs in our projects.
-
-## Slack Community
-
-Join our [Open Source Community][slack] on Slack. It's **FREE** for everyone! Our "SweetOps" community is where you get to talk with others who share a similar vision for how to rollout and manage infrastructure. This is the best place to talk shop, ask questions, solicit feedback, and work together as a community to build totally *sweet* infrastructure.
-
-## Discourse Forums
-
-Participate in our [Discourse Forums][discourse]. Here you'll find answers to commonly asked questions. Most questions will be related to the enormous number of projects we support on our GitHub. Come here to collaborate on answers, find solutions, and get ideas about the products and services we value. It only takes a minute to get started! Just sign in with SSO using your GitHub account.
-
-## Newsletter
-
-Sign up for [our newsletter][newsletter] that covers everything on our technology radar.  Receive updates on what we're up to on GitHub as well as awesome new projects we discover.
-
-## Office Hours
-
-[Join us every Wednesday via Zoom][office_hours] for our weekly "Lunch & Learn" sessions. It's **FREE** for everyone!
-
-[![zoom](https://img.cloudposse.com/fit-in/200x200/https://cloudposse.com/wp-content/uploads/2019/08/Powered-by-Zoom.png")][office_hours]
+File a GitHub [issue](https://github.com/UGNS/build-harness/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/cloudposse/build-harness/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/UGNS/build-harness/issues) to report any bugs or file feature requests.
 
 ### Developing
 
-If you are interested in being a contributor and want to get involved in developing this project or [help out](https://cpco.io/help-out) with our other projects, we would love to hear from you! Shoot us an [email][email].
+If you are interested in being a contributor and want to get involved in developing this project or help out with our other projects, we would love to hear from you!.
 
 In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
@@ -403,7 +358,7 @@ In general, PRs are welcome. We follow the typical "fork-and-pull" Git workflow.
 
 ## Copyrights
 
-Copyright © 2016-2021 [Cloud Posse, LLC](https://cloudposse.com)
+Copyright © 2021-2022 [UnderGrid Network Services](https://undergrid.net)
 
 
 
@@ -448,23 +403,20 @@ All other trademarks referenced herein are the property of their respective owne
 
 ## About
 
-This project is maintained and funded by [Cloud Posse, LLC][website]. Like it? Please let us know by [leaving a testimonial][testimonial]!
+This project is maintained and funded by [UnderGrid Network Services][website]. Like it? Please let us know!
 
-[![Cloud Posse][logo]][website]
+[![UnderGrid Network Services][logo]][website]
 
-We're a [DevOps Professional Services][hire] company based in Los Angeles, CA. We ❤️  [Open Source Software][we_love_open_source].
+We're a DevOps Professional Services company based in Kissimmee, FL.
 
-We offer [paid support][commercial_support] on all of our projects.
-
-Check out [our other projects][github], [follow us on twitter][twitter], [apply for a job][jobs], or [hire us][hire] to help with your cloud strategy and implementation.
-
+Check out [our other projects][github].
 
 
 ### Contributors
 
 <!-- markdownlint-disable -->
-|  [![Erik Osterman][osterman_avatar]][osterman_homepage]<br/>[Erik Osterman][osterman_homepage] | [![Igor Rodionov][goruha_avatar]][goruha_homepage]<br/>[Igor Rodionov][goruha_homepage] | [![Andriy Knysh][aknysh_avatar]][aknysh_homepage]<br/>[Andriy Knysh][aknysh_homepage] | [![Sarkis][sarkis_avatar]][sarkis_homepage]<br/>[Sarkis][sarkis_homepage] | [![Alexander Babai][alebabai_avatar]][alebabai_homepage]<br/>[Alexander Babai][alebabai_homepage] | [![Jon Boulle][jonboulle_avatar]][jonboulle_homepage]<br/>[Jon Boulle][jonboulle_homepage] | [![Marcin Brański][3h4x_avatar]][3h4x_homepage]<br/>[Marcin Brański][3h4x_homepage] |
-|---|---|---|---|---|---|---|
+|  [![Erik Osterman][osterman_avatar]][osterman_homepage]<br/>[Erik Osterman][osterman_homepage] | [![Igor Rodionov][goruha_avatar]][goruha_homepage]<br/>[Igor Rodionov][goruha_homepage] | [![Andriy Knysh][aknysh_avatar]][aknysh_homepage]<br/>[Andriy Knysh][aknysh_homepage] | [![Sarkis][sarkis_avatar]][sarkis_homepage]<br/>[Sarkis][sarkis_homepage] | [![Alexander Babai][alebabai_avatar]][alebabai_homepage]<br/>[Alexander Babai][alebabai_homepage] | [![Jon Boulle][jonboulle_avatar]][jonboulle_homepage]<br/>[Jon Boulle][jonboulle_homepage] | [![Marcin Brański][3h4x_avatar]][3h4x_homepage]<br/>[Marcin Brański][3h4x_homepage] | [![Jeremy T. Bouse][jbouse_avatar]][jbouse_homepage]<br/>[Jeremy T. Bouse][jbouse_homepage] |
+|---|---|---|---|---|---|---|---|
 <!-- markdownlint-restore -->
 
   [osterman_homepage]: https://github.com/osterman
@@ -481,37 +433,24 @@ Check out [our other projects][github], [follow us on twitter][twitter], [apply 
   [jonboulle_avatar]: https://img.cloudposse.com/150x150/https://github.com/jonboulle.png
   [3h4x_homepage]: https://github.com/3h4x
   [3h4x_avatar]: https://img.cloudposse.com/150x150/https://github.com/3h4x.png
+  [jbouse_homepage]: https://github.com/jbouse
+  [jbouse_avatar]: https://img.cloudposse.com/150x150/https://github.com/jbouse.png
 
-[![README Footer][readme_footer_img]][readme_footer_link]
 [![Beacon][beacon]][website]
 
   [logo]: https://cloudposse.com/logo-300x69.svg
-  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=docs
-  [website]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=website
-  [github]: https://cpco.io/github?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=github
-  [jobs]: https://cpco.io/jobs?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=jobs
-  [hire]: https://cpco.io/hire?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=hire
-  [slack]: https://cpco.io/slack?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=slack
-  [linkedin]: https://cpco.io/linkedin?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=linkedin
-  [twitter]: https://cpco.io/twitter?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=twitter
-  [testimonial]: https://cpco.io/leave-testimonial?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=testimonial
-  [office_hours]: https://cloudposse.com/office-hours?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=office_hours
-  [newsletter]: https://cpco.io/newsletter?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=newsletter
-  [discourse]: https://ask.sweetops.com/?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=discourse
-  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=email
-  [commercial_support]: https://cpco.io/commercial-support?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=commercial_support
-  [we_love_open_source]: https://cpco.io/we-love-open-source?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=we_love_open_source
-  [terraform_modules]: https://cpco.io/terraform-modules?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=terraform_modules
-  [readme_header_img]: https://cloudposse.com/readme/header/img
-  [readme_header_link]: https://cloudposse.com/readme/header/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=readme_header_link
-  [readme_footer_img]: https://cloudposse.com/readme/footer/img
-  [readme_footer_link]: https://cloudposse.com/readme/footer/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=readme_footer_link
-  [readme_commercial_support_img]: https://cloudposse.com/readme/commercial-support/img
-  [readme_commercial_support_link]: https://cloudposse.com/readme/commercial-support/link?utm_source=github&utm_medium=readme&utm_campaign=cloudposse/build-harness&utm_content=readme_commercial_support_link
-  [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/cloudposse/build-harness
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/cloudposse/build-harness
-  [share_reddit]: https://reddit.com/submit/?url=https://github.com/cloudposse/build-harness
-  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/cloudposse/build-harness
-  [share_googleplus]: https://plus.google.com/share?url=https://github.com/cloudposse/build-harness
-  [share_email]: mailto:?subject=Build+Harness&body=https://github.com/cloudposse/build-harness
-  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/cloudposse/build-harness?pixel&cs=github&cm=readme&an=build-harness
+  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=docs
+  [website]: https://undergrid.net?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=website
+  [cloudposse]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=cloudposse
+  [sweetops]: https://cpco.io/sweetops?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=sweetops
+  [github]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=github
+  [linkedin]: https://www.linkedin.com/company/undergrid-network-services/?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=linkedin
+  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=email
+  [terraform_modules]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=terraform_modules
+  [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/UGNS/build-harness
+  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/UGNS/build-harness
+  [share_reddit]: https://reddit.com/submit/?url=https://github.com/UGNS/build-harness
+  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/UGNS/build-harness
+  [share_googleplus]: https://plus.google.com/share?url=https://github.com/UGNS/build-harness
+  [share_email]: mailto:?subject=Build+Harness&body=https://github.com/UGNS/build-harness
+  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/UGNS/build-harness?pixel&cs=github&cm=readme&an=build-harness

@@ -96,7 +96,5 @@ include:
 
 # Contributors to this project
 contributors:
-- name: "Erik Osterman"
-  github: "osterman"
 - name: "Jeremy T. Bouse"
   github: "jbouse"
