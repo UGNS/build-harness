@@ -443,10 +443,10 @@ Check out [our other projects][github].
   [website]: https://undergrid.net?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=website
   [cloudposse]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=cloudposse
   [sweetops]: https://cpco.io/sweetops?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=sweetops
-  [github]: https://github.com/ugns?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=github
+  [github]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=github
   [linkedin]: https://www.linkedin.com/company/undergrid-network-services/?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=linkedin
   [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=email
-  [terraform_modules]: https://github.com/ugns?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=terraform_modules
+  [terraform_modules]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=terraform_modules
   [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/ugns/build-harness
   [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/ugns/build-harness
   [share_reddit]: https://reddit.com/submit/?url=https://github.com/ugns/build-harness
