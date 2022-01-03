@@ -1,6 +1,6 @@
 
 <!-- markdownlint-disable -->
-# Build Harness [![Build Status](https://github.com/UGNS/build-harness/workflows/docker/badge.svg?branch=master)](https://github.com/UGNS/build-harness/actions?query=workflow%3Adocker) [![Latest Release](https://img.shields.io/github/release/UGNS/build-harness.svg)](https://github.com/UGNS/build-harness/releases/latest)
+# Build Harness [![Build Status](https://github.com/ugns/build-harness/workflows/docker/badge.svg?branch=master)](https://github.com/ugns/build-harness/actions?query=workflow%3Adocker) [![Latest Release](https://img.shields.io/github/release/ugns/build-harness.svg)](https://github.com/ugns/build-harness/releases/latest)
 <!-- markdownlint-restore -->
 
 [![UnderGrid Network Services][logo]](https://undergrid.net)
@@ -99,7 +99,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: UGNS/build-harness@master
+    - uses: ugns/build-harness@master
       with:
         entrypoint: /usr/bin/make
         args: readme/lint
@@ -109,8 +109,8 @@ jobs:
 
 Here's how to get started...
 
-1. `git clone https://github.com/UGNS/build-harness.git` to pull down the repository
-2. `make init` to initialize the [`build-harness`](https://github.com/UGNS/build-harness/)
+1. `git clone https://github.com/ugns/build-harness.git` to pull down the repository
+2. `make init` to initialize the [`build-harness`](https://github.com/ugns/build-harness/)
 
 
 ## Examples
@@ -292,7 +292,7 @@ Now when you run `make` the project will update itself to use the version specif
 ```sh
 $ make help
 Removing existing build-harness
-Cloning https://github.com/UGNS/build-harness.git#{TAG}...
+Cloning https://github.com/ugns/build-harness.git#{TAG}...
 Cloning into 'build-harness'...
 remote: Enumerating objects: 143, done.
 remote: Counting objects: 100% (143/143), done.
@@ -310,7 +310,7 @@ Available targets:
 
 ## Share the Love
 
-Like this project? Please give it a ★ on [our GitHub](https://github.com/UGNS/build-harness)! (it helps us **a lot**)
+Like this project? Please give it a ★ on [our GitHub](https://github.com/ugns/build-harness)! (it helps us **a lot**)
 
 
 
@@ -318,7 +318,7 @@ Like this project? Please give it a ★ on [our GitHub](https://github.com/UGNS/
 
 Check out these related projects.
 
-- [Packages](https://github.com/UGNS/packages) - UnderGrid Network Services installer and distribution of native apps
+- [Packages](https://github.com/ugns/packages) - UnderGrid Network Services installer and distribution of native apps
 
 
 ## References
@@ -332,13 +332,13 @@ For additional context, refer to some of these links.
 
 **Got a question?** We got answers.
 
-File a GitHub [issue](https://github.com/UGNS/build-harness/issues).
+File a GitHub [issue](https://github.com/ugns/build-harness/issues).
 
 ## Contributing
 
 ### Bug Reports & Feature Requests
 
-Please use the [issue tracker](https://github.com/UGNS/build-harness/issues) to report any bugs or file feature requests.
+Please use the [issue tracker](https://github.com/ugns/build-harness/issues) to report any bugs or file feature requests.
 
 ### Developing
 
@@ -439,18 +439,18 @@ Check out [our other projects][github].
 [![Beacon][beacon]][website]
 
   [logo]: https://cloudposse.com/logo-300x69.svg
-  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=docs
-  [website]: https://undergrid.net?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=website
-  [cloudposse]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=cloudposse
-  [sweetops]: https://cpco.io/sweetops?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=sweetops
-  [github]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=github
-  [linkedin]: https://www.linkedin.com/company/undergrid-network-services/?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=linkedin
-  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=email
-  [terraform_modules]: https://github.com/UGNS?utm_source=github&utm_medium=readme&utm_campaign=UGNS/build-harness&utm_content=terraform_modules
-  [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/UGNS/build-harness
-  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/UGNS/build-harness
-  [share_reddit]: https://reddit.com/submit/?url=https://github.com/UGNS/build-harness
-  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/UGNS/build-harness
-  [share_googleplus]: https://plus.google.com/share?url=https://github.com/UGNS/build-harness
-  [share_email]: mailto:?subject=Build+Harness&body=https://github.com/UGNS/build-harness
-  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/UGNS/build-harness?pixel&cs=github&cm=readme&an=build-harness
+  [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=docs
+  [website]: https://undergrid.net?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=website
+  [cloudposse]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=cloudposse
+  [sweetops]: https://cpco.io/sweetops?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=sweetops
+  [github]: https://github.com/ugns?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=github
+  [linkedin]: https://www.linkedin.com/company/undergrid-network-services/?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=linkedin
+  [email]: https://cpco.io/email?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=email
+  [terraform_modules]: https://github.com/ugns?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=terraform_modules
+  [share_twitter]: https://twitter.com/intent/tweet/?text=Build+Harness&url=https://github.com/ugns/build-harness
+  [share_linkedin]: https://www.linkedin.com/shareArticle?mini=true&title=Build+Harness&url=https://github.com/ugns/build-harness
+  [share_reddit]: https://reddit.com/submit/?url=https://github.com/ugns/build-harness
+  [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/ugns/build-harness
+  [share_googleplus]: https://plus.google.com/share?url=https://github.com/ugns/build-harness
+  [share_email]: mailto:?subject=Build+Harness&body=https://github.com/ugns/build-harness
+  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/ugns/build-harness?pixel&cs=github&cm=readme&an=build-harness

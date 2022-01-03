@@ -4,11 +4,11 @@
 # Order is important: the last matching pattern has the highest precedence
 
 # These owners will be the default owners for everything
-*             @UGNS/engineering @UGNS/contributors
+*             @ugns/engineering @ugns/contributors
 
 # UnderGrid Network Services must review any changes to Makefiles
-**/Makefile   @UGNS/engineering
-**/Makefile.* @UGNS/engineering
+**/Makefile   @ugns/engineering
+**/Makefile.* @ugns/engineering
 
 # UnderGrid Network Services must review any changes to GitHub actions
-.github/*     @UGNS/engineering
+.github/*     @ugns/engineering

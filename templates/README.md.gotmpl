@@ -406,10 +406,10 @@ Check out [our other projects][github].
   [website]: {{ printf $utm_link "https://undergrid.net" "website" }}
   [cloudposse]: {{ printf $utm_link "https://cpco.io/homepage" "cloudposse" }}
   [sweetops]: {{ printf $utm_link "https://cpco.io/sweetops" "sweetops" }}
-  [github]: {{ printf $utm_link "https://github.com/UGNS" "github" }}
+  [github]: {{ printf $utm_link "https://github.com/ugns" "github" }}
   [linkedin]: {{ printf $utm_link "https://www.linkedin.com/company/undergrid-network-services/" "linkedin" }}
   [email]: {{ printf $utm_link "https://cpco.io/email" "email" }}
-  [terraform_modules]: {{ printf $utm_link "https://github.com/UGNS" "terraform_modules" }}
+  [terraform_modules]: {{ printf $utm_link "https://github.com/ugns" "terraform_modules" }}
   [share_twitter]: {{ printf "https://twitter.com/intent/tweet/?text=%s&url=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
   [share_linkedin]: {{ printf "https://www.linkedin.com/shareArticle?mini=true&title=%s&url=https://github.com/%s" ((ds "config").name | regexp.Replace " " "+") (ds "config").github_repo }}
   [share_reddit]: {{ printf "https://reddit.com/submit/?url=https://github.com/%s" (ds "config").github_repo }}

@@ -6,7 +6,7 @@ on:
 jobs:
   auto-readme:
     runs-on: ubuntu-latest
-    container: UGNS/build-harness:latest
+    container: ugns/build-harness:latest
     steps:
     # Checkout the pull request branch
     #  "An action in a workflow run can’t trigger a new workflow run. For example, if an action pushes code using

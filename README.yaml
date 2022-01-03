@@ -19,21 +19,21 @@ copyrights:
     url: "https://undergrid.net"
     year: "2021"
 # Canonical GitHub repo
-github_repo: UGNS/build-harness
+github_repo: ugns/build-harness
 
 # Badges to display
 badges:
   - name: "Build Status"
-    image: "https://github.com/UGNS/build-harness/workflows/docker/badge.svg?branch=master"
-    url: "https://github.com/UGNS/build-harness/actions?query=workflow%3Adocker"
+    image: "https://github.com/ugns/build-harness/workflows/docker/badge.svg?branch=master"
+    url: "https://github.com/ugns/build-harness/actions?query=workflow%3Adocker"
   - name: "Latest Release"
-    image: "https://img.shields.io/github/release/UGNS/build-harness.svg"
-    url: "https://github.com/UGNS/build-harness/releases/latest"
+    image: "https://img.shields.io/github/release/ugns/build-harness.svg"
+    url: "https://github.com/ugns/build-harness/releases/latest"
 
 related:
   - name: "Packages"
     description: "UnderGrid Network Services installer and distribution of native apps"
-    url: "https://github.com/UGNS/packages"
+    url: "https://github.com/ugns/packages"
   # - name: "Dev Harness"
   #   description: "Cloud Posse Local Development Harness"
   #   url: "https://github.com/cloudposse/dev"
@@ -90,7 +90,7 @@ usage: |-
       runs-on: ubuntu-latest
       steps:
       - uses: actions/checkout@master
-      - uses: UGNS/build-harness@master
+      - uses: ugns/build-harness@master
         with:
           entrypoint: /usr/bin/make
           args: readme/lint
@@ -108,8 +108,8 @@ examples: |-
 quickstart: |-
   Here's how to get started...
 
-  1. `git clone https://github.com/UGNS/build-harness.git` to pull down the repository
-  2. `make init` to initialize the [`build-harness`](https://github.com/UGNS/build-harness/)
+  1. `git clone https://github.com/ugns/build-harness.git` to pull down the repository
+  2. `make init` to initialize the [`build-harness`](https://github.com/ugns/build-harness/)
 
 # Other files to include in this README from the project folder
 include:
