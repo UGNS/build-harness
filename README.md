@@ -98,8 +98,8 @@ jobs:
     name: 'Lint README.md'
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: ugns/build-harness@master
+    - uses: actions/checkout@main
+    - uses: ugns/build-harness@main
       with:
         entrypoint: /usr/bin/make
         args: readme/lint
@@ -407,7 +407,7 @@ This project is maintained and funded by [UnderGrid Network Services][website]. 
 
 [![UnderGrid Network Services][logo]][website]
 
-We're a DevOps Professional Services company based in Kissimmee, FL.
+We're a DevOps Professional Services consulting firm based in Kissimmee, FL.
 
 Check out [our other projects][github].
 
@@ -415,30 +415,16 @@ Check out [our other projects][github].
 ### Contributors
 
 <!-- markdownlint-disable -->
-|  [![Erik Osterman][osterman_avatar]][osterman_homepage]<br/>[Erik Osterman][osterman_homepage] | [![Igor Rodionov][goruha_avatar]][goruha_homepage]<br/>[Igor Rodionov][goruha_homepage] | [![Andriy Knysh][aknysh_avatar]][aknysh_homepage]<br/>[Andriy Knysh][aknysh_homepage] | [![Sarkis][sarkis_avatar]][sarkis_homepage]<br/>[Sarkis][sarkis_homepage] | [![Alexander Babai][alebabai_avatar]][alebabai_homepage]<br/>[Alexander Babai][alebabai_homepage] | [![Jon Boulle][jonboulle_avatar]][jonboulle_homepage]<br/>[Jon Boulle][jonboulle_homepage] | [![Marcin Brański][3h4x_avatar]][3h4x_homepage]<br/>[Marcin Brański][3h4x_homepage] | [![Jeremy T. Bouse][jbouse_avatar]][jbouse_homepage]<br/>[Jeremy T. Bouse][jbouse_homepage] |
-|---|---|---|---|---|---|---|---|
+|  [![Jeremy T. Bouse][jbouse_avatar]][jbouse_homepage]<br/>[Jeremy T. Bouse][jbouse_homepage] |
+|---|
 <!-- markdownlint-restore -->
 
-  [osterman_homepage]: https://github.com/osterman
-  [osterman_avatar]: https://img.cloudposse.com/150x150/https://github.com/osterman.png
-  [goruha_homepage]: https://github.com/goruha
-  [goruha_avatar]: https://img.cloudposse.com/150x150/https://github.com/goruha.png
-  [aknysh_homepage]: https://github.com/aknysh
-  [aknysh_avatar]: https://img.cloudposse.com/150x150/https://github.com/aknysh.png
-  [sarkis_homepage]: https://github.com/sarkis
-  [sarkis_avatar]: https://img.cloudposse.com/150x150/https://github.com/sarkis.png
-  [alebabai_homepage]: https://github.com/alebabai
-  [alebabai_avatar]: https://img.cloudposse.com/150x150/https://github.com/alebabai.png
-  [jonboulle_homepage]: https://github.com/jonboulle
-  [jonboulle_avatar]: https://img.cloudposse.com/150x150/https://github.com/jonboulle.png
-  [3h4x_homepage]: https://github.com/3h4x
-  [3h4x_avatar]: https://img.cloudposse.com/150x150/https://github.com/3h4x.png
   [jbouse_homepage]: https://github.com/jbouse
   [jbouse_avatar]: https://img.cloudposse.com/150x150/https://github.com/jbouse.png
 
 [![Beacon][beacon]][website]
 
-  [logo]: https://cloudposse.com/logo-300x69.svg
+  [logo]: https://undergrid.net/undergrid-logo-300x88.png
   [docs]: https://cpco.io/docs?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=docs
   [website]: https://undergrid.net?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=website
   [cloudposse]: https://cpco.io/homepage?utm_source=github&utm_medium=readme&utm_campaign=ugns/build-harness&utm_content=cloudposse
@@ -453,4 +439,4 @@ Check out [our other projects][github].
   [share_facebook]: https://facebook.com/sharer/sharer.php?u=https://github.com/ugns/build-harness
   [share_googleplus]: https://plus.google.com/share?url=https://github.com/ugns/build-harness
   [share_email]: mailto:?subject=Build+Harness&body=https://github.com/ugns/build-harness
-  [beacon]: https://ga-beacon.cloudposse.com/UA-76589703-4/ugns/build-harness?pixel&cs=github&cm=readme&an=build-harness
+  [beacon]: https://ga-beacon.cloudposse.com/UA-2819624-1/ugns/build-harness?pixel&cs=github&cm=readme&an=build-harness
